@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Unbenanntes Dokument</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+    <body>
+
+      <!-- Header -->
+      <div class="header">
+        <!--<h1>Flexbox</h1>-->
+        <img class="logo" src="flexboxlogo.png" alt="Selfhtml">
+      </div>
+
+      <!-- Navigation Bar -->
+        <div class="navbar">
+          <a href="#index.html">Einleitung</a>
+          <a href="geschichte.html">Geschichte</a>
+          <a href="flexbox.html">Beispiele</a>
+          <a href="warum_flexbox.html">Warum Flexbox?</a>
+        </div>
+
+        
+
+        <!-- The flexible grid (content) -->
+        <div class="row">
+          <div class="side">
+           
+           <img class="mainimg" src="container.PNG">
+           
+            <div class="fakeimg">
+             <!-- <img src="display.PNG"> -->
+	            <!-- <center><h1>Eigenschaften für das übergeordnete Element </h1></center> -->
+	              <br>
+   	            <h2>display</h2>
+
+                <p>'display' ist keine für flexbox spezifische Eigenschaft,
+                  sondern eine CSS-Eigenschaft. Im Allgemeinen wird der Typ der
+                  Renderbox definiert, der für ein Element verwendet wird. Im
+                  Falle von Flexbox definiert es einen Flex-Container. Inline
+                  oder Block abhängig vom angegebenen Wert. Dies ermöglicht
+                  einen flexiblen Kontext für alle direkten Kinder.</p>
+
+                <pre><code>.container {
+  display: flex;
+}</code></pre>
+              </div>
+
+              
+              <div class="fakeimg">
+              <img src="flex_direction.PNG">
+	           
+   	            <h3>flex-direction</h3>
+
+                <p>Legt die Richtung fest, in der Flex-Artikel im Flex-Container platziert werden. Flexbox ist ein Layoutkonzept in einer Richtung. Flex-Elemente haben hauptsächlich horizontale Zeilen oder vertikale Spalten. Die vier Optionen für die Flex-Richtung sind Zeile | Zeilenumkehrung | Spalte | Spalte umgekehrt. Zeile und Zeile umkehren sind abhängig vom Schreibmodus.</p>
+
+                <pre><code>.container {
+  flex-direction: row | row-reverse | column | column-reverse;
+}</code></pre>
+              </div>
+              
+              
+              <div class="fakeimg">
+              <img src="flex_wrap.PNG">
+	           
+   	            <h3>flex-wrap</h3>
+
+                <p>Legt die Richtung fest, in der Flex-Artikel im Flex-Container platziert werden. Flexbox ist ein Layoutkonzept in einer Richtung. Flex-Elemente haben hauptsächlich horizontale Zeilen oder vertikale Spalten. Die vier Optionen für die Flex-Richtung sind Zeile | Zeilenumkehrung | Spalte | Spalte umgekehrt. Zeile und Zeile umkehren sind abhängig vom Schreibmodus.</p>
+
+                <pre><code>.container{
+  flex-wrap: nowrap | wrap | wrap-reverse;
+}</code></pre>
+              </div>
+              
+              
+            <div class="fakeimg">
+              <img src="justify_content.PNG">
+	            <!-- <center><h1>Eigenschaften für das übergeordnete Element </h1></center> -->
+	              <br>
+   	            <h2>justify-content</h2>
+
+                <p>'display' ist keine für flexbox spezifische Eigenschaft,
+                  sondern eine CSS-Eigenschaft. Im Allgemeinen wird der Typ der
+                  Renderbox definiert, der für ein Element verwendet wird. Im
+                  Falle von Flexbox definiert es einen Flex-Container. Inline
+                  oder Block abhängig vom angegebenen Wert. Dies ermöglicht
+                  einen flexiblen Kontext für alle direkten Kinder.</p>
+
+                <pre><code>.container {
+  justify-content: flex-start | flex-end | center |
+  space-between | space-around | space-evenly;
+}</code></pre>
+              </div>
+              
+              
+              <div class="fakeimg">
+              <img src="align-items.PNG">
+	           
+   	            <h3>align-items</h3>
+
+                <p>Legt die Richtung fest, in der Flex-Artikel im Flex-Container platziert werden. Flexbox ist ein Layoutkonzept in einer Richtung. Flex-Elemente haben hauptsächlich horizontale Zeilen oder vertikale Spalten. Die vier Optionen für die Flex-Richtung sind Zeile | Zeilenumkehrung | Spalte | Spalte umgekehrt. Zeile und Zeile umkehren sind abhängig vom Schreibmodus.</p>
+
+                <pre><code>.container {
+  align-items: stretch | flex-start | flex-end | 
+  center | baseline;
+}</code></pre>
+              </div>
+              
+              
+              <div class="fakeimg">
+              <img src="align-content.PNG">
+	           
+   	            <h3>align-content</h3>
+
+                <p>Legt die Richtung fest, in der Flex-Artikel im Flex-Container platziert werden. Flexbox ist ein Layoutkonzept in einer Richtung. Flex-Elemente haben hauptsächlich horizontale Zeilen oder vertikale Spalten. Die vier Optionen für die Flex-Richtung sind Zeile | Zeilenumkehrung | Spalte | Spalte umgekehrt. Zeile und Zeile umkehren sind abhängig vom Schreibmodus.</p>
+
+                <pre><code>.container {
+  align-content: flex-start | flex-end | center | 
+  space-between | space-around | stretch;
+}</code></pre>
+              </div>
+              
+              
+          </div>
+
+            <div class="main">
+            
+            <img class="mainimg" src="items.PNG">
+             
+              <div class="fakeimg1">
+              <img src="order.PNG">
+                
+                <h2>order</h2>
+
+                <p>Steuert die Reihenfolge, in der Flex-Elemente im Flex-Container angezeigt werden.</p>
+
+                <pre><code>.item {
+  order: <integer>; /* default is 0 */
+}</code></pre>
+              </div>
+                  
+                  
+                  <div class="fakeimg1">
+              <img src="flex_grow.PNG">
+                
+                <h2>flex-grow</h2>
+
+                <p>Steuert die Reihenfolge, in der Flex-Elemente im Flex-Container angezeigt werden.</p>
+
+                <pre><code>.item {
+  flex-grow: <number>; /* default 0 */
+}</code></pre>
+              </div>
+                 
+                 
+                 <div class="fakeimg1">
+              <!-- <img src="flex_grow.PNG"> -->
+                
+                <h2>flex-shrink</h2>
+
+                <p>Steuert die Reihenfolge, in der Flex-Elemente im Flex-Container angezeigt werden.</p>
+
+                <pre><code>.item {
+  flex-shrink: <number>; /* default 1 */
+}</code></pre>
+              </div>
+                 
+                 
+                 <div class="fakeimg1">
+              <!-- <img src="flex_grow.PNG"> -->
+                
+                <h2>flex-basis</h2>
+
+                <p>Steuert die Reihenfolge, in der Flex-Elemente im Flex-Container angezeigt werden.</p>
+
+                <pre><code>.item {
+  flex-basis: <length> | auto; /* default auto */
+}</code></pre>
+              </div>
+                 
+                 
+                 <div class="fakeimg1">
+              <!-- <img src="flex_grow.PNG"> -->
+                
+                <h2>flex</h2>
+
+                <p>Steuert die Reihenfolge, in der Flex-Elemente im Flex-Container angezeigt werden.</p>
+
+                <pre><code>.item {
+  flex: none | [ <'flex-grow'> <'flex-shrink'>? |
+  | <'flex-basis'> ]
+}</code></pre>
+              </div>
+                  
+                   
+                    </div>
+                  </div>
+
+                <!-- Footer -->
+                <!-- <div class="footer">
+                  <h2>Footer</h2>
+                </div> -->
+
+                <script  src="main.js"></script>
+
+              </body>
+              </html>

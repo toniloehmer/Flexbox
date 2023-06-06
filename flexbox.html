@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>display: flex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Header -->
+      <div class="header">
+        <!--<h1>Flexbox</h1>-->
+        <img class="logo" src="flexboxlogo.png" alt="Selfhtml">
+      </div>
+
+      <!-- Navigation Bar -->
+        <div class="navbar">
+          <a href="index.html">Einleitung</a>
+          <a href="geschichte.html">Geschichte</a>
+          <a href="flexbox.html">Beispiele</a>
+          <a href="warum_flexbox.html">Warum Flexbox?</a>
+        </div>
+        
+        <br>
+        <br>
+  
+   <!-- <div class="page-heading">Test CSS Flexbox Rules</div> -->
+   
+    <div class="child-count-container">
+        <div class="control-heading child-count-info">Die Anzahl der Objekte ändern</div>
+        <input id="ChildCount" class="child-count-slider" type="range" min="1" max="5" value="5">
+    </div>
+    <div class="flex-parent">
+        <div class="flex-child" style="background-color: #ffc584;">1</div>
+        <div class="flex-child" style="background-color: #ffb866;">2</div>
+        <div class="flex-child" style="background-color: #ffa53d;">3</div>
+        <div class="flex-child" style="background-color: #ff9314;">4</div>
+        <div class="flex-child" style="background-color: #ff8a00;">5</div>
+       <!-- <div class="flex-child" style="background-color: #00B3DF;">6</div>
+        <div class="flex-child" style="background-color: #009FC5;">7</div>
+        <div class="flex-child" style="background-color: #008AAC;">8</div> -->
+    </div>
+    <div class="controls-container">
+        <div class="flex-attribute-control flex-direction">
+            <div class="control-heading">flex-direction</div>
+            <div class="control-group">
+                <label>
+                    <input type="radio" name="flex-direction" value="row" checked>
+                    row (default)
+                </label>
+                <label>
+                    <input type="radio" name="flex-direction" value="row-reverse">
+                    row-reverse
+                </label>
+                <label>
+                    <input type="radio" name="flex-direction" value="column">
+                    column
+                </label>
+                <label>
+                    <input type="radio" name="flex-direction" value="column-reverse">
+                    column-reverse
+                </label>
+            </div>
+        </div>
+        <div class="flex-attribute-control flex-wrap">
+            <div class="control-heading">flex-wrap</div>
+            <div class="control-explanation">Ob Objekte in der nächsten <span class="if-row">Zeile</span><span class="if-column">Spalte</span> umgebrochen werden (gilt nur, wenn die kombinierte  <span class="if-row">Breite</span><span class="if-column">Höhe</span> der Elemente grösser als die des Containers ist.)</div>
+            <div class="control-group">
+                <label>
+                    <input type="radio" name="flex-wrap" value="nowrap" checked>
+                    nowrap (default)
+                </label>
+                <label>
+                    <input type="radio" name="flex-wrap" value="wrap">
+                    wrap
+                </label>
+                <label>
+                    <input type="radio" name="flex-wrap" value="wrap-reverse">
+                    wrap-reverse
+                </label>
+            </div>
+        </div>
+        <div class="flex-attribute-control justify-content">
+            <div class="control-heading">justify-content</div>
+            <div class="control-explanation">Ausrichtung entlang der <span class="if-row">x</span><span class="if-column">y</span> Achse</div>
+            <div class="control-group">
+                <label>
+                    <input type="radio" name="justify-content" value="flex-start" checked>
+                    flex-start (default)
+                </label>
+                <label>
+                    <input type="radio" name="justify-content" value="flex-end">
+                    flex-end
+                </label>
+                <label>
+                    <input type="radio" name="justify-content" value="center">
+                    center
+                </label>
+                <label>
+                    <input type="radio" name="justify-content" value="space-around">
+                    space-around
+                </label>
+                <label>
+                    <input type="radio" name="justify-content" value="space-between">
+                    space-between
+                </label>
+            </div>
+        </div>
+        <div class="flex-attribute-control align-items">
+            <div class="control-heading">align-items</div>
+            <div class="control-explanation">Ausrichtung entlang der <span class="if-row">y</span><span class="if-column">x</span> Achse</div>
+            <div class="control-group">
+                <label>
+                    <input type="radio" name="align-items" value="stretch" checked>
+                    stretch (default)
+                </label>
+                <label>
+                    <input type="radio" name="align-items" value="baseline">
+                    baseline
+                </label>
+                <label>
+                    <input type="radio" name="align-items" value="center">
+                    center
+                </label>
+                <label>
+                    <input type="radio" name="align-items" value="flex-start">
+                    flex-start
+                </label>
+                <label>
+                    <input type="radio" name="align-items" value="flex-end">
+                    flex-end
+                </label>
+            </div>
+        </div>
+        <div class="flex-attribute-control align-content">
+            <div class="control-heading">align-content</div>
+            <div class="control-explanation">Gilt nur, wenn mehr als eine <span class="if-row">Zeile</span><span class="if-column">Spalte</span> vorhanden ist</div>
+            <div class="control-group">
+                <label>
+                    <input type="radio" name="align-content" value="stretch" checked>
+                    stretch (default)
+                </label>
+                <label>
+                    <input type="radio" name="align-content" value="center">
+                    center
+                </label>
+                <label>
+                    <input type="radio" name="align-content" value="flex-start">
+                    flex-start
+                </label>
+                <label>
+                    <input type="radio" name="align-content" value="flex-end">
+                    flex-end
+                </label>
+                <label>
+                    <input type="radio" name="align-content" value="space-around">
+                    space-around
+                </label>
+                <label>
+                    <input type="radio" name="align-content" value="space-between">
+                    space-between
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="preview-container">
+        <div class="control-heading">CSS OUTPUT</div>
+        <pre class="preview"></pre>
+    </div>
+    
+    <br>
+    <br>
+    
+   <!-- <div class="contact">
+        Feedback? Get in touch: <a href="https://twitter.com/taylersumms">@taylersumms</a>
+    </div> -->
+    <script src="main.js"></script>
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//zealotops.com/lytics/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 6]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//zealotops.com/lytics/piwik.php?idsite=6" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
+</body>
+</html>
